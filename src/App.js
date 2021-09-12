@@ -11,7 +11,7 @@ function App() {
 
     useEffect(() => {
         const apiRequest = async () => {
-            const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+            const apiKey = "7fb5557b0e1147debd530d7de88d1a33";
             const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`;
             const response = await axios.get(url);
             addNews(response.data.articles);
